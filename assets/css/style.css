@@ -679,6 +679,7 @@ body {
 
     .about_box {
         height: 358px;
+        max-width: 1140px;
     }
 
     .mt_journey {
