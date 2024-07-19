@@ -675,11 +675,15 @@ body {
     .support_card {
         max-width: 1140px;
         height: 358px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .about_box {
         height: 358px;
         max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .mt_journey {
