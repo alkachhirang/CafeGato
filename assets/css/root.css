@@ -50,6 +50,29 @@
 .text_peach {
     color: var(--peach);
 }
+.bg_purple{
+    background-color: var(--lightpurple);
+}
+.bg_sky{
+    background-color: var(--lightsky);
+}
+/*============= LINE-HEIGHT ======== */
+
+.lh_125 {
+    line-height: 125%;
+}
+.lh_175 {
+    line-height: 175%;
+}
+.lh_169 {
+    line-height: 169%;
+}
+.lh_150 {
+    line-height: 150%;
+}
+.lh_121 {
+    line-height: 121%;
+}
 
 @media (min-width:992px) and (max-width:1200px) {
     :root {

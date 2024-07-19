@@ -49,13 +49,13 @@ body {
     height: 497px;
 }
 
-.heroLight {
+.hero_light {
     top: -12%;
     right: 7%;
     pointer-events: none;
 }
 
-.herostar {
+.hero_star {
     right: 19%;
     top: 47px;
     pointer-events: none;
@@ -87,10 +87,6 @@ body {
     pointer-events: none;
 }
 
-.lh_125 {
-    line-height: 125%;
-}
-
 .hero_vector {
     width: 192px;
     height: 166px;
@@ -98,19 +94,19 @@ body {
     pointer-events: none;
 }
 
-/*========== OPEN ========= */
-.open_mt {
+/*========== CAFE-SECTION ========= */
+.cafe_mt {
     margin-top: 100px;
 }
 
-.open_bg_img {
+.cafe_bg_img {
     background-image: url(/assets/images/webp/windowGlass.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.open_img {
+.cafe_img {
     height: 300px;
 }
 
@@ -120,10 +116,6 @@ body {
     box-shadow: 0px 22px 0px 0px var(--darkblue);
     border-radius: 13px;
     padding: 15px;
-}
-
-.lh_175 {
-    line-height: 175%;
 }
 
 .about_cat_feet1 {
@@ -160,12 +152,12 @@ body {
     height: 159px;
 }
 
-.missin_catfeet {
+.missin_cat_feet {
     left: -10%;
     top: 15%;
 }
 
-.mission_catfeet_img {
+.mission_cat_feet_img {
     width: 100px;
     left: 0%;
     bottom: -2%;
@@ -173,8 +165,7 @@ body {
 }
 
 /*============= BENIFITS ============ */
-.benifit_card1 {
-    background-color: var(--lightpurple);
+.benifit_card {
     box-shadow: 0px 22px 0px 0px var(--darkblue);
     border: 4px solid var(--darkblue);
     padding: 24px;
@@ -182,30 +173,13 @@ body {
     transition: all 300ms linear;
 }
 
-.benifit_card1:hover {
+.benifit_card:hover {
     transform: scale(1.02);
 }
 
-.benifit_card2 {
-    background-color: var(--lightsky);
-    box-shadow: 0px 22px 0px 0px var(--darkblue);
-    border: 4px solid var(--darkblue);
-    padding: 24px;
-    border-radius: 13px;
-    transition: all 300ms linear;
-}
-
-.benifit_card2:hover {
-    transform: scale(1.02);
-}
-
-.benifit_catimg {
+.benifit_cat_img {
     max-width: 220px;
     height: 220px;
-}
-
-.lh_169 {
-    line-height: 169%;
 }
 
 .mt_benifit {
@@ -225,11 +199,7 @@ body {
     top: -13%;
 }
 
-.lh_150 {
-    line-height: 150%;
-}
-
-.journey_catfeet {
+.journey_cat_feet {
     bottom: 30%;
     left: 5%;
     pointer-events: none;
@@ -248,21 +218,17 @@ body {
     max-width: 787px;
 }
 
-.lh_121 {
-    line-height: 121%;
-}
-
 .mt_support {
     margin-top: 80px;
 }
 
-.support_light1 {
+.support_lamp1 {
     width: 75px;
     height: 270px;
     left: 4%;
 }
 
-.support_light2 {
+.support_lamp2 {
     width: 75px;
     height: 201px;
     right: 4%;
@@ -309,12 +275,12 @@ body {
     padding-bottom: 60px;
 }
 
-.connected_cardimg {
+.connected_card_img {
     max-width: 116px;
     height: 197px;
 }
 
-.connect_catfeetimg {
+.connect_cat_feet_img {
     right: 6%;
     bottom: 57%;
     pointer-events: none;
@@ -337,7 +303,7 @@ body {
     transform: translateY(-7px);
 }
 
-.footericon_gap {
+.footer_icon_gap {
     gap: 15px;
 }
 
@@ -358,11 +324,11 @@ body {
         left: 17%;
     }
 
-    .open_mt {
+    .cafe_mt {
         margin-top: 130px;
     }
 
-    .open_img {
+    .cafe_img {
         height: 400px;
     }
 
@@ -370,17 +336,13 @@ body {
         padding: 30px;
     }
 
-    .benifit_catimg {
+    .benifit_cat_img {
         max-width: 260px;
         height: 260px;
         pointer-events: none;
     }
 
-    .benifit_card1 {
-        padding: 24px 56px 56px 56px;
-    }
-
-    .benifit_card2 {
+    .benifit_card {
         padding: 24px 56px 56px 56px;
     }
 
@@ -388,7 +350,7 @@ body {
         padding: 25px;
     }
 
-    .footericon_gap {
+    .footer_icon_gap {
         gap: 25px;
     }
 
@@ -411,11 +373,11 @@ body {
         left: 26%;
     }
 
-    .open_mt {
+    .cafe_mt {
         margin-top: 150px;
     }
 
-    .open_img {
+    .cafe_img {
         height: 500px;
     }
 
@@ -429,12 +391,12 @@ body {
         height: 525px;
     }
 
-    .benifit_catimg {
+    .benifit_cat_img {
         max-width: 301px;
         height: 301px;
     }
 
-    .footericon_gap {
+    .footer_icon_gap {
         gap: 38px;
     }
 
@@ -480,11 +442,11 @@ body {
         margin-bottom: 22px;
     }
 
-    .open_mt {
+    .cafe_mt {
         margin-top: 200px;
     }
 
-    .open_img {
+    .cafe_img {
         height: 571px;
     }
 
@@ -509,12 +471,7 @@ body {
         margin-top: 120px;
     }
 
-    .benifit_card1 {
-        height: 686px;
-        max-width: 530px;
-    }
-
-    .benifit_card2 {
+    .benifit_card {
         height: 686px;
         max-width: 530px;
     }
@@ -590,12 +547,12 @@ body {
         padding: 40px 48px 28px 48px;
     }
 
-    .support_light1 {
+    .support_lamp1 {
         height: 298px;
         left: 7%;
     }
 
-    .support_light2 {
+    .support_lamp2 {
         right: 6%;
     }
 
@@ -631,7 +588,7 @@ body {
         height: 1145px;
     }
 
-    .open_mt {
+    .cafe_mt {
         margin-top: 0;
     }
 
@@ -663,7 +620,7 @@ body {
         width: 125px;
     }
 
-    .mission_catfeet_img {
+    .mission_cat_feet_img {
         width: 100px;
         bottom: 6%;
     }
