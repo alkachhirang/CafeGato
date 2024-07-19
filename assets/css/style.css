@@ -4,7 +4,6 @@
     font-family: 'norwester';
     src: url('/assets/fonts/norwester/norwester.otf');
 }
-
 .ff_norwester {
     font-family: norwester;
 }
@@ -70,17 +69,23 @@ body {
     text-shadow: 0px 4px 7.1px 0px var(--darkblue) !important;
 }
 
-.cloud_img {
-    max-width: 300px;
-    min-height: 253px;
-    top: -59%;
-    left: 7%;
-    pointer-events: none;
+.hero_cloud_img {
+    background-image: url('/assets/images/webp/cloud.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 266px;
+}
+.cloud_content {
+    max-width: 248px;
+    top: 27%;
+    left: 13%;
 }
 
 .cat_img {
     top: 43%;
-    right: 2%;
+    right: -31%;
     pointer-events: none;
 }
 
@@ -314,12 +319,6 @@ body {
 }
 
 @media (min-width:575px) {
-    .cloud_img {
-        max-width: 339px;
-        min-height: 286px;
-        top: -39%;
-        left: 17%;
-    }
 
     .cafe_mt {
         margin-top: 85px;
@@ -378,16 +377,13 @@ body {
     .submit_btn {
         padding: 25px;
     }
+    .hero_cloud_img {
+        width: 340px;
+        height: 286px;
+    }   
 }
 
 @media (min-width:768px) {
-    .cloud_img {
-        max-width: 339px;
-        min-height: 286px;
-        top: -39%;
-        left: 26%;
-    }
-
     .cafe_img {
         height: 500px;
     }
@@ -426,17 +422,6 @@ body {
 @media (min-width:992px) {
     .mw_545 {
         max-width: 545px;
-    }
-
-    .cloud_img {
-        max-width: 339px;
-        min-height: 286px;
-        top: -38%;
-        left: -4%;
-    }
-
-    .mw_450 {
-        max-width: 450px;
     }
 
     .mb_lg_22 {
@@ -525,13 +510,6 @@ body {
         height: 530px;
     }
 
-    .cloud_img {
-        max-width: 339px;
-        min-height: 286px;
-        top: -38%;
-        left: 14%;
-    }
-
     .cat_img {
         top: 56%;
         right: -19%;
@@ -576,6 +554,9 @@ body {
     .submit_btn {
         padding: 30px;
         max-width: 471px;
+    }
+    .mw_450 {
+        max-width: 450px;
     }
 }
 
@@ -652,11 +633,4 @@ body {
     .mt_journey {
         margin-top: 197px;
     }
-}
-
-@media (min-width:510px) and (max-width:576px) {
-    .cloud_img {
-        left: 20%;
-    }
-
 }
