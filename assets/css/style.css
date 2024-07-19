@@ -70,7 +70,7 @@ body {
 }
 
 .text_shadow {
-    text-shadow: 0px 4px 7.1px 0px var(--lightblue);
+    text-shadow: 0px 4px 7.1px 0px var(--darkblue) !important;
 }
 
 .cloud_img {
@@ -96,7 +96,7 @@ body {
 
 /*========== CAFE-SECTION ========= */
 .cafe_mt {
-    margin-top: 100px;
+    margin-top: 55px;
 }
 
 .cafe_bg_img {
@@ -325,7 +325,7 @@ body {
     }
 
     .cafe_mt {
-        margin-top: 130px;
+        margin-top: 85px;
     }
 
     .cafe_img {
@@ -363,10 +363,15 @@ body {
     .mt_benifit {
         margin-top: 64px;
     }
-    
+
     .mission_women_img {
         max-width: 459px;
-        height: 631px;
+        height: 560px;
+    }
+
+    .journey_women_img {
+        max-width: 408px;
+        height: 525px;
     }
 }
 
@@ -378,17 +383,12 @@ body {
         left: 26%;
     }
 
-    .cafe_mt {
-        margin-top: 150px;
-    }
-
     .cafe_img {
         height: 500px;
     }
 
-    .journey_women_img {
-        max-width: 408px;
-        height: 525px;
+    .cafe_mt {
+        margin-top: 100px;
     }
 
     .benifit_cat_img {
@@ -501,6 +501,11 @@ body {
 
     .submit_btn {
         padding: 30px;
+    }
+
+    .mission_women_img {
+        max-width: 459px;
+        height: 631px;
     }
 }
 
