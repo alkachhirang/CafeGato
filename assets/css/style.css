@@ -14,29 +14,43 @@
 }
 
 body {
-    background-color: var(--offwhite);
+    background-color: var(--offwhite) !important;
+}
+
+.mw_1920 {
+    max-width: 1920px;
+}
+
+/*================== SCROLLBAR ============== */
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--peach);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
 }
 
 /*============== HEADER-SECTION ============== */
-
 .page_logo {
-    width: 155px;
-    height: 152px;
+    width: 130px;
+    height: 110px;
     margin-top: 26px;
 }
 
 .hero_img {
-    max-width: 493px;
+    max-width: 540px;
     height: 850px;
 }
 
 .hero_bg_shadow {
-    max-width: 502px;
+    max-width: 547px;
     height: 497px;
 }
 
 .heroLight {
-    top: -17%;
+    top: -12%;
     right: 7%;
     pointer-events: none;
 }
@@ -76,24 +90,264 @@ body {
 .lh_125 {
     line-height: 125%;
 }
-.hero_vector{
+
+.hero_vector {
     width: 192px;
-    height: 164px;
-    bottom: 0;
+    height: 166px;
+    top: -29%;
     pointer-events: none;
 }
+
 /*========== OPEN ========= */
-.open_mt{
+.open_mt {
     margin-top: 100px;
 }
-.open_bg_img{
-    background-image: url(/assets/images/png/windowGlass.png);
+
+.open_bg_img {
+    background-image: url(/assets/images/webp/windowGlass.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.open_img{
+
+.open_img {
     height: 300px;
+}
+
+/*===================== ABOUT-SECTION ===================== */
+.about_box {
+    border: 4px solid var(--darkblue);
+    box-shadow: 0px 22px 0px 0px var(--darkblue);
+    border-radius: 13px;
+    padding: 15px;
+}
+
+.lh_175 {
+    line-height: 175%;
+}
+
+.about_cat_feet1 {
+    right: -30px;
+    top: 55px;
+    pointer-events: none;
+}
+
+.about_cat_feet2 {
+    right: 0px;
+    bottom: 100px;
+    pointer-events: none;
+}
+
+.about_cat_feet3 {
+    left: 3%;
+    bottom: -9%;
+    pointer-events: none;
+}
+
+.about_feet {
+    width: 100px;
+    right: 0;
+    pointer-events: none;
+}
+
+/*============== OUR-MISSION ================ */
+.mt_mission {
+    margin-top: 64px;
+}
+
+.mission_cat {
+    max-width: 118px;
+    height: 159px;
+}
+
+.missin_catfeet {
+    left: -10%;
+    top: 15%;
+}
+
+.mission_catfeet_img {
+    width: 100px;
+    left: 0%;
+    bottom: -2%;
+    pointer-events: none;
+}
+
+/*============= BENIFITS ============ */
+.benifit_card1 {
+    background-color: var(--lightpurple);
+    box-shadow: 0px 22px 0px 0px var(--darkblue);
+    border: 4px solid var(--darkblue);
+    padding: 24px;
+    border-radius: 13px;
+    transition: all 300ms linear;
+}
+
+.benifit_card1:hover {
+    transform: scale(1.02);
+}
+
+.benifit_card2 {
+    background-color: var(--lightsky);
+    box-shadow: 0px 22px 0px 0px var(--darkblue);
+    border: 4px solid var(--darkblue);
+    padding: 24px;
+    border-radius: 13px;
+    transition: all 300ms linear;
+}
+
+.benifit_card2:hover {
+    transform: scale(1.02);
+}
+
+.benifit_catimg {
+    max-width: 220px;
+    height: 220px;
+}
+
+.lh_169 {
+    line-height: 169%;
+}
+
+.mt_benifit {
+    margin-top: 48px;
+}
+
+/*================= JOURNEY ================= */
+.mt_journey {
+    margin-top: 80px;
+}
+
+.top_5 {
+    top: 5%;
+}
+
+.top_13 {
+    top: -13%;
+}
+
+.lh_150 {
+    line-height: 150%;
+}
+
+.journey_catfeet {
+    bottom: 30%;
+    left: 5%;
+    pointer-events: none;
+}
+
+/*=========== SUPPORT-TOGETHER ============ */
+.support_card {
+    background-color: var(--peach);
+    border: 4px solid #09384E;
+    box-shadow: 0px 22px 0px 0px #09384E;
+    padding: 15px;
+    border-radius: 13px;
+}
+
+.mw_787 {
+    max-width: 787px;
+}
+
+.lh_121 {
+    line-height: 121%;
+}
+
+.mt_support {
+    margin-top: 80px;
+}
+
+.support_light1 {
+    width: 75px;
+    height: 270px;
+    left: 4%;
+}
+
+.support_light2 {
+    width: 75px;
+    height: 201px;
+    right: 4%;
+}
+
+/*========== STAY-CONNECTED =========== */
+.connect_input {
+    outline: none;
+    padding: 25px 29px;
+    border: 3px solid var(--darkblue);
+    background-color: transparent;
+    border-radius: 72px;
+}
+
+::placeholder {
+    color: var(--darkblue);
+}
+
+.submit_btn {
+    background-color: var(--peach);
+    border: 3px solid transparent;
+    border-radius: 72px;
+    padding: 25px;
+    width: 100%;
+    color: var(--white);
+    box-shadow: 0px 4px 25.6px 0px var(--lightpeach);
+    transition: all 300ms linear;
+}
+
+.submit_btn:hover {
+    background-color: transparent;
+    border: 3px solid var(--peach);
+    color: var(--peach);
+}
+
+.connected_layer {
+    max-width: 490px;
+    height: 381px;
+    top: 26%;
+}
+
+.py_connected {
+    padding-top: 80px;
+    padding-bottom: 74px;
+}
+
+.connected_cardimg {
+    max-width: 116px;
+    height: 197px;
+}
+
+.connect_catfeetimg {
+    right: 6%;
+    bottom: 57%;
+    pointer-events: none;
+}
+
+.top_10 {
+    top: 10%;
+}
+
+/*============== FOOTER ================ */
+.bg_blue {
+    background-color: var(--darkblue);
+}
+
+.footer_link {
+    transition: all 300ms linear;
+}
+
+.footer_link:hover {
+    transform: translateY(-7px);
+}
+
+.footericon_gap {
+    gap: 15px;
+}
+
+.footer_line {
+    height: 1px;
+    background-color: #FFFFFF36;
+}
+
+.opacity_8 {
+    opacity: 80%;
 }
 
 @media (min-width:575px) {
@@ -103,11 +357,49 @@ body {
         top: -39%;
         left: 17%;
     }
-    .open_mt{
+
+    .open_mt {
         margin-top: 130px;
     }
-    .open_img{
+
+    .open_img {
         height: 400px;
+    }
+
+    .about_box {
+        padding: 30px;
+    }
+
+    .benifit_catimg {
+        max-width: 260px;
+        height: 260px;
+        pointer-events: none;
+    }
+
+    .benifit_card1 {
+        padding: 24px 56px 56px 56px;
+    }
+
+    .benifit_card2 {
+        padding: 24px 56px 56px 56px;
+    }
+
+    .support_card {
+        padding: 25px;
+    }
+
+    .footericon_gap {
+        gap: 25px;
+    }
+
+    .page_logo {
+        width: 155px;
+        height: 152px;
+        margin-top: 26px;
+    }
+
+    .mt_benifit {
+        margin-top: 64px;
     }
 }
 
@@ -118,11 +410,53 @@ body {
         top: -39%;
         left: 26%;
     }
-    .open_mt{
+
+    .open_mt {
         margin-top: 150px;
     }
-    .open_img{
+
+    .open_img {
         height: 500px;
+    }
+
+    .mission_women_img {
+        max-width: 459px;
+        height: 631px;
+    }
+
+    .journey_women_img {
+        max-width: 408px;
+        height: 525px;
+    }
+
+    .benifit_catimg {
+        max-width: 301px;
+        height: 301px;
+    }
+
+    .footericon_gap {
+        gap: 38px;
+    }
+
+    .connect_men_img {
+        max-width: 500px;
+    }
+
+    .connect_input {
+        padding: 25px 29px;
+    }
+
+    .submit_btn {
+        padding: 25px;
+    }
+
+    .py_connected {
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+
+    .mt_journey {
+        margin-top: 48px;
     }
 }
 
@@ -145,20 +479,77 @@ body {
     .mb_lg_22 {
         margin-bottom: 22px;
     }
-    .hero_vector{
-        bottom: -30%;
-    }
-    .open_mt{
+
+    .open_mt {
         margin-top: 200px;
     }
-    .open_img{
+
+    .open_img {
         height: 571px;
+    }
+
+    .mw_590 {
+        max-width: 590px;
+    }
+
+    .about_box {
+        padding: 25px 75px 20px 35px;
+    }
+
+    .mission_layer {
+        max-width: 897px;
+        height: 619px;
+    }
+
+    .mt_mission {
+        margin-top: 120px;
+    }
+
+    .mt_benifit {
+        margin-top: 120px;
+    }
+
+    .benifit_card1 {
+        height: 686px;
+        max-width: 530px;
+    }
+
+    .benifit_card2 {
+        height: 686px;
+        max-width: 530px;
+    }
+
+    .journey_layer {
+        max-width: 550px;
+        height: 505px;
+    }
+
+    .connect_input {
+        max-width: 471px;
+        height: 90px;
+    }
+
+    .py_connected {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .mt_journey {
+        margin-top: 150px;
+    }
+
+    .mt_support {
+        margin-top: 130px;
+    }
+
+    .submit_btn {
+        padding: 30px;
     }
 }
 
 @media (min-width:1200px) {
     .mw_1164 {
-        max-width: 1164px;
+        max-width: 1164px !important;
     }
 
     .hero_img {
@@ -182,30 +573,122 @@ body {
         top: 56%;
         right: -19%;
     }
-    .hero_vector{
-        bottom: -26%;
+
+    .mw_413 {
+        max-width: 413px;
+    }
+
+    .mt_mission {
+        margin-top: 150px;
+    }
+
+    .mt_benifit {
+        margin-top: 150px;
+    }
+
+    .support_card {
+        padding: 40px 48px 28px 48px;
+    }
+
+    .support_light1 {
+        height: 298px;
+        left: 7%;
+    }
+
+    .support_light2 {
+        right: 6%;
+    }
+
+    .journey_layer {
+        max-width: 720px;
+        height: 513px;
+    }
+
+    .connected_layer {
+        max-width: 673px;
+        height: 576px;
+        top: 24%;
+    }
+
+    .submit_btn {
+        padding: 30px;
+        max-width: 471px;
     }
 }
 
 @media (min-width:1400px) {
     .hero_img {
-        max-width: 800px;
+        max-width: 760px;
         height: 960px;
     }
 
     .hero_bg_shadow {
-        max-width: 805px;
-        height: 565px;
+        max-width: 765px;
+        height: 560px;
     }
 
     .header_height {
         height: 1145px;
     }
 
-    .hero_vector{
-        bottom: 0;
-    }
-    .open_mt{
+    .open_mt {
         margin-top: 0;
     }
+
+    .mt_mission {
+        margin-top: 200px;
+    }
+
+    .mt_benifit {
+        margin-top: 190px;
+    }
+
+    .journey_layer {
+        max-width: 806px;
+        height: 619px;
+    }
+
+    .connected_layer {
+        max-width: 780px;
+        height: 619px;
+        top: 29%;
+    }
+
+    .py_connected {
+        padding-top: 170px;
+        padding-bottom: 160px;
+    }
+
+    .about_feet {
+        width: 125px;
+    }
+
+    .mission_catfeet_img {
+        width: 100px;
+        bottom: 6%;
+    }
+
+    .mt_support {
+        margin-top: 266px;
+    }
+
+    .support_card {
+        max-width: 1140px;
+        height: 358px;
+    }
+
+    .about_box {
+        height: 358px;
+    }
+
+    .mt_journey {
+        margin-top: 197px;
+    }
+}
+
+@media (min-width:510px) and (max-width:576px) {
+    .cloud_img {
+        left: 20%;
+    }
+
 }
