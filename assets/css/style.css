@@ -363,6 +363,11 @@ body {
     .mt_benifit {
         margin-top: 64px;
     }
+    
+    .mission_women_img {
+        max-width: 459px;
+        height: 631px;
+    }
 }
 
 @media (min-width:768px) {
@@ -379,11 +384,6 @@ body {
 
     .cafe_img {
         height: 500px;
-    }
-
-    .mission_women_img {
-        max-width: 459px;
-        height: 631px;
     }
 
     .journey_women_img {
