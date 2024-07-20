@@ -50,6 +50,9 @@
 .text_peach {
     color: var(--peach);
 }
+.text_red{
+    color: red;
+}
 .bg_purple{
     background-color: var(--lightpurple);
 }

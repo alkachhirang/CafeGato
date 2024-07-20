@@ -5,15 +5,63 @@ const currentYear = new Date().getFullYear();
 document.getElementById('year').textContent = currentYear;
 
 //============ CONNECTED-FORM ===========
-document.getElementById('myForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    const nameInput = event.target.querySelector('input[type="text"]');
-    const emailInput = event.target.querySelector('input[type="email"]');
-    const name = nameInput.value;
-    const email = emailInput.value;
-    console.log('Form submitted!');
-    console.log('Name:', name);
-    console.log('Email:', email);
-    nameInput.value = '';
-    emailInput.value = '';
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting the traditional way
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var nameError = document.getElementById("nameError");
+    var emailError = document.getElementById("emailError");
+
+    var nameRegex = /^[a-zA-Z\s]+$/;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    var isValid = true;
+
+    // Clear previous error messages
+    nameError.textContent = "";
+    emailError.textContent = "";
+
+    if (name === "") {
+        nameError.textContent = "Name is required.";
+        isValid = false;
+    } else if (!nameRegex.test(name)) {
+        nameError.textContent = "Name can only contain letters and spaces.";
+        isValid = false;
+    }
+
+    if (email === "") {
+        emailError.textContent = "Email is required.";
+        isValid = false;
+    } else if (!emailRegex.test(email)) {
+        emailError.textContent = "Invalid email format.";
+        isValid = false;
+    }
+
+    if (isValid) {
+        // If form is valid, submit data via AJAX
+        fetch('/submit-form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name: name, email: email })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Form submitted successfully');
+                // Clear form fields
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+            } else {
+                alert('Form submission failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Form submit successfully');
+        });
+    }
 });

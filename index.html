@@ -268,13 +268,17 @@
                     Stay Connected</h2>
                 <div class="row align-items-center justify-content-center position-relative z-1 mt-md-4">
                     <div class="col-lg-6 col-12 mt-4 mt-lg-0" data-aos="fade-right" data-aos-duration="1000">
-                        <form id="myForm">
-                            <input class="connect_input w-100 mb-md-4 mb-3 text_blue text_md fw-normal" type="text"
-                                placeholder="Enter your name" required />
-                            <input class="connect_input w-100 mt-md-2 text_blue text_md fw-normal mb-1" type="email"
-                                placeholder="Enter your email" required />
-                            <button type="submit"
-                                class="submit_btn text_sm fw-semibold mt-3 mt-sm-4 mt-xl-5">Submit</button>
+                        <form id="myForm" onsubmit="return validateForm()">
+                            <input class="connect_input w-100 text_blue text_md mb-1 fw-normal" type="text"
+                                   id="name" name="name" placeholder="Enter your name" required />
+                            <p id="nameError" class="text_red text_sm mt-1 ps-4 mb-0 fw-normal"></p>
+                            
+                            <input class="connect_input w-100 mt-md-2 text_blue text_md fw-normal mb-1 mt-md-4 mt-3" type="text"
+                                   id="email" name="email" placeholder="Enter your email" required />
+                            <p id="emailError" class="text_red text_sm mt-1 ps-4 mb-0 fw-normal"></p>
+                            
+                            <button type="submit" value="Submit"
+                                    class="submit_btn text_sm fw-semibold mt-3 mt-sm-4 mt-xl-5">Submit</button>
                         </form>
                     </div>
                     <div class="col-lg-6 col-12 mt-5 mt-lg-0 position-relative" data-aos="fade-left"
