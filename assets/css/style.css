@@ -176,7 +176,7 @@ body {
 }
 
 .benifit_card:hover {
-    transform: scale(1.02);
+    box-shadow: 0px 14px 0px 0px var(--darkblue);
 }
 
 .benifit_cat_img {
